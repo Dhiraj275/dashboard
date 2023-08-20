@@ -1,0 +1,167 @@
+{
+    "quota": {
+        "tokens_per_day": {
+            "consumed": 3,
+            "remaining": 24592
+        },
+        "tokens_per_hour": {
+            "consumed": 3,
+            "remaining": 4944
+        },
+        "concurrent_requests": {
+            "remaining": 10
+        },
+        "server_errors_per_project_per_hour": {
+            "remaining": 10
+        },
+        "potentially_thresholded_requests_per_hour": {
+            "remaining": 120
+        }
+    },
+    "headers": [
+        "city",
+        "activeUsers"
+    ],
+    "rows": [
+        [
+            "Indore",
+            "13"
+        ],
+        [
+            "Jaipur",
+            "13"
+        ],
+        [
+            "Vapi",
+            "9"
+        ],
+        [
+            "Nagpur",
+            "8"
+        ],
+        [
+            "Lucknow",
+            "7"
+        ],
+        [
+            "Patna",
+            "7"
+        ],
+        [
+            "Delhi",
+            "6"
+        ],
+        [
+            "Pune",
+            "5"
+        ],
+        [
+            "Ahmedabad",
+            "4"
+        ],
+        [
+            "Panipat",
+            "4"
+        ],
+        [
+            "Agra",
+            "3"
+        ],
+        [
+            "Bengaluru",
+            "3"
+        ],
+        [
+            "Chandigarh",
+            "3"
+        ],
+        [
+            "Mumbai",
+            "3"
+        ],
+        [
+            "Raipur",
+            "3"
+        ],
+        [
+            "(not set)",
+            "2"
+        ],
+        [
+            "Kolkata",
+            "2"
+        ],
+        [
+            "Ludhiana",
+            "2"
+        ],
+        [
+            "Abohar",
+            "1"
+        ],
+        [
+            "Amravati",
+            "1"
+        ],
+        [
+            "Anand",
+            "1"
+        ],
+        [
+            "Bhubaneswar",
+            "1"
+        ],
+        [
+            "Coimbatore",
+            "1"
+        ],
+        [
+            "Ghaziabad",
+            "1"
+        ],
+        [
+            "Hyderabad",
+            "1"
+        ],
+        [
+            "Jind",
+            "1"
+        ],
+        [
+            "Jodhpur",
+            "1"
+        ],
+        [
+            "Johannesburg",
+            "1"
+        ],
+        [
+            "Muzaffarpur",
+            "1"
+        ],
+        [
+            "Ranchi",
+            "1"
+        ],
+        [
+            "Rohtak",
+            "1"
+        ],
+        [
+            "Shimla",
+            "1"
+        ],
+        [
+            "Sonipat",
+            "1"
+        ],
+        [
+            "Srinagar",
+            "1"
+        ],
+        [
+            "Surat",
+            "1"
+        ]
+    ]
+}

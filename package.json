@@ -1,0 +1,57 @@
+{
+  "name": "react-js-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/cache": "^11.5.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.0.5",
+    "@mui/lab": "^5.0.0-alpha.53",
+    "@mui/material": "^5.0.6",
+    "@mui/styles": "^5.0.2",
+    "@tinymce/tinymce-react": "^4.2.0",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^3.9.1",
+    "firebase": "^8.9.0",
+    "formik": "^2.1.5",
+    "googleapis": "^105.0.0",
+    "jquery": "^3.6.0",
+    "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^17.0.2",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.0",
+    "sweetalert2": "^11.1.2",
+    "plyr-react": "^5.1.0",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
