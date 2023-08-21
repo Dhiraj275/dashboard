@@ -1,18 +1,16 @@
-import { Box, Button, Divider, Drawer, ListItem } from '@mui/material';
-import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
-import { Cog as CogIcon } from '../icons/cog';
-import { User as UserIcon } from '../icons/user';
-import { Users as UsersIcon } from '../icons/users';
-import './component.css';
-import Submenu from './SlideBar/SubMenu';
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import PropTypes from 'prop-types';
-import { useDataLayerValue } from '../DataLayer/DataLayer';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import FeaturedVideoIcon from '@mui/icons-material/FeaturedVideo';
-import VideocamIcon from '@mui/icons-material/Videocam';
+import SellIcon from '@mui/icons-material/Sell';
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
+import { Box, Button, Divider, Drawer, ListItem } from '@mui/material';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { useDataLayerValue } from '../DataLayer/DataLayer';
+import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
+import Submenu from './SlideBar/SubMenu';
+import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
+import './component.css';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 const items = [
     {
         href: '/',
@@ -21,14 +19,14 @@ const items = [
     },
 
     {
-        href: '/review-videos',
-        icon: (<VideocamIcon />),
-        title: 'Submitted Content'
+        href: '/orders',
+        icon: (<SellIcon />),
+        title: 'Orders'
     },
     {
-        href: '/feature-videos',
-        icon: (<FeaturedVideoIcon />),
-        title: 'Featured Videos'
+        href: '/to-do',
+        icon: (<PlaylistAddCheckIcon />),
+        title: 'To Do'
     },
     {
         href: '/mails',
@@ -38,28 +36,15 @@ const items = [
 ];
 const productSubItems = [
     {
-        href: "/videos/all",
-        name: "All Vidoes",
+        href: "/products/all",
+        name: "All Products",
     },
     {
-        href: "/videos/categories",
+        href: "/products/categories",
         name: "Categories",
     },
 ]
-const usersSubItems = [
-    {
-        href: "/users/all",
-        name: "All Users",
-    },
-    {
-        href: "/users/farmers",
-        name: "Farmers",
-    },
-    {
-        href: "/users/corporates",
-        name: "Corporates",
-    },
-]
+
 
 const NavItem = (props) => {
     const { href, icon, title, ...others } = props;
@@ -135,24 +120,6 @@ function SlideMenu() {
                     px: 3
                 }}
             >
-                {/* <div>
-                    <Box sx={{ p: 3 }}>
-                        <Link
-                            to="/"
-                        // passHref
-                        >
-                            <a>
-                                {/* <Logo
-                                    sx={{
-                                        height: 42,
-                                        width: 42
-                                    }}
-                                /> 
-                            </a>
-                        </Link>
-                    </Box>
-
-                </div> */}
                 <Divider
                     sx={{
                         borderColor: '#2D3748',
@@ -168,8 +135,7 @@ function SlideMenu() {
                             title={item.title}
                         />
                     ))}
-                    <Submenu list={productSubItems} icon={<VideoLibraryIcon />} name="Videos" />
-                    {/* <Submenu list={usersSubItems} icon={<UsersIcon />} name="Users" /> */}
+                    <Submenu list={productSubItems} icon={<ShoppingBagIcon />} name="Products" />
                 </Box>
 
             </Box>
@@ -195,7 +161,7 @@ function SlideMenu() {
                         borderRightColor: "rgb(45, 55, 72)"
                     }
                 }}
-                // sx={{ zIndex: (theme) => theme.zIndex.appBar + 1 }}
+            // sx={{ zIndex: (theme) => theme.zIndex.appBar + 1 }}
             >
                 {content}
             </Drawer>

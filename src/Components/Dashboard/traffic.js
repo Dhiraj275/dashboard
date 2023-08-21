@@ -1,6 +1,6 @@
-import AgricultureIcon from '@mui/icons-material/Agriculture';
-import CorporateFareIcon from '@mui/icons-material/CorporateFare';
-import PersonIcon from '@mui/icons-material/Person';
+import Instagram from '@mui/icons-material/Instagram';
+import Facebook from '@mui/icons-material/Facebook';
+import Twitter from '@mui/icons-material/Twitter';
 import { Box, Card, CardContent, CardHeader, Divider, Typography, useTheme } from '@mui/material';
 import { useState } from 'react';
 import { Doughnut } from 'react-chartjs-2';
@@ -14,14 +14,14 @@ export const TrafficByDevice = (props) => {
   const data = {
     datasets: [
       {
-        data: [lengths.farmers, lengths.corporates, lengths.consumers],
+        data: [47, 33, 20],
         backgroundColor: ['#3F51B5', '#e53935', '#FB8C00'],
         borderWidth: 8,
         borderColor: theme.palette.neutral[700],
         hoverBorderColor: theme.palette.neutral[700]
       }
     ],
-    labels: ['Farmers', 'Corporates', 'Consumers']
+    labels: ['Instagram', 'Facebook', 'Twitter']
   };
 
   const options = {
@@ -49,28 +49,28 @@ export const TrafficByDevice = (props) => {
 
   const devices = [
     {
-      title: 'Farmers',
-      value: Math.round((lengths.farmers / users.length) * 100),
-      icon: AgricultureIcon,
+      title: 'Instagram',
+      value:47,
+      icon: Instagram,
       color: '#3F51B5'
     },
     {
-      title: 'Corporates',
-      value: Math.round((lengths.corporates / users.length) * 100),
-      icon: CorporateFareIcon,
+      title: 'Facebook',
+      value: 33,
+      icon: Facebook,
       color: '#E53935'
     },
     {
-      title: 'Consumers',
-      value: Math.round((lengths.consumers / users.length) * 100),
-      icon: PersonIcon,
+      title: 'Twitter',
+      value: 20,
+      icon: Twitter,
       color: '#FB8C00'
     }
   ];
 
   return (
     <Card {...props}>
-      <CardHeader title="Users Statistics" />
+      <CardHeader title="User Traffic" />
       <Divider />
       <CardContent>
         <Box

@@ -47,14 +47,9 @@ const SubLink = ({ item, index }) => {
     )
 }
 const Submenu = (props) => {
-    // const { href, icon, title, ...others } = props;
-    // const router = useRouter();
     const [listOpen, setListOpen] = React.useState(false);
-
     const handleClick = () => {
-
         if (!listOpen || !active) { setListOpen(!listOpen); }
-
     };
     const active = window.location.pathname.includes(props.name.toLowerCase());
     const subList = props.list
@@ -66,7 +61,6 @@ const Submenu = (props) => {
                 py: 0,
 
             }}
-        // {...others}
         >
             <Button
                 onClick={handleClick}
